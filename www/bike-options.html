@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Car Rental</title>
+</head>
+
+<body class="upsell">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <a class="logo" href="index.html">
+                    <i class="fas fa-bicycle"></i> Rental
+                </a>
+                <div class="profile">Jon Doe <i class="fas fa-user"></i></div>
+            </div>
+        </header>
+    </div>
+    <main>
+        <section class="section section-dark">
+            <div class="container">
+                <a class="breadcrum" href="results.html"><span class="breadcrum__num">1</span>Search Results</a>
+                <i class="fas fa-chevron-right"></i>
+                <a class="breadcrum" href="#"><span class="breadcrum__num">2</span>Bike Options</a>
+                <i class="fas fa-chevron-right bread__disabled"></i>
+                <a class="breadcrum bread__disabled" href="#"><span
+                        class="breadcrum__num bread__disabled">3</span>Checkout</a>
+            </div>
+        </section>
+        <section class="section inner--top-small inner--bottom-big">
+            <div class="container">
+                <h1>Optimize your reservation</h1>
+            </div>
+            <div class="container inner--top-small grid grid_8_4">
+                <div class="grid__item_main">
+                    <div class="card card_upsell">
+                        <div class="upsell_header border-bot">
+                            <h4>Protection</h4>
+                        </div>
+                        <div class="upsell_subheader">
+                            <p>Order helmet for yourself to be more safe while riding for only <span
+                                    class="strong">100</span> DKK</p>
+                            <a href="#">Read more</a>
+                        </div>
+                        <div class="upsell_content">
+                            <div class="flex">
+                                <input type="checkbox" id="protection" name="protection" data-to-open="protection"
+                                    value="100">
+                                <label for="protection" class="terms grow_3">I want to order helmet for myself</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card_upsell">
+                        <div class="upsell_header border-bot">
+                            <h4>Special protection</h4>
+                        </div>
+                        <div class="upsell_subheader">
+                            <p>Order neck airbag from Hödving for yourself to be more safe while riding for only <span
+                                    class="strong">300</span> DKK</p>
+                            <a href="#">Read more</a>
+                        </div>
+                        <div class="upsell_content">
+                            <div class="flex">
+                                <input type="checkbox" id="addons" name="addons" data-to-open="addons" value="200">
+                                <label for="addons" class="terms grow_3">I want to order neck airbag from Hödving for myself.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card_upsell">
+                        <div class="upsell_header border-bot">
+                            <h4>Insurance</h4>
+                        </div>
+                        <div class="upsell_subheader">
+                            <p>Get insurance in case the bike will get stolen for <span class="strong">400</span> DKK</p>
+                            <a href="#">Read more</a>
+                        </div>
+                        <div class="upsell_content">
+                            <div class="flex">
+                                <input type="checkbox" id="safety" name="safety" data-to-open="safety" value="300">
+                                <label for="safety" class="terms grow_3">I want insurance for bike.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-grid upsell_cta">
+                        <a href="results.html" class="btn btn-sec">Go back to selection</a>
+                        <a href="checkout.html" class="btn btn-main">Proceed to checkout</a>
+                    </div>
+                </div>
+                <aside>
+                    <div class="card card-car flex-col">
+                        <div class="car_header border-bot">
+                            <div class="car_header__main flex">
+                                <div>
+                                    <h4>Christiania bike</h4>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <i class="far fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="aspect">
+                            <div class="aspect_content__1_1">
+                                <div class="aspect_content__inner flex-center img car_img">
+                                    <img src="media/christiania-bike.jpg" alt="tesla-x">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car_column">
+                            <div class="car_content">
+                                <h5>Bike info</h5>
+                                <div class="flex">
+                                    <p>Order subtotal</p>
+                                    <p class="strong">420 DKK</p>
+                                </div>
+                            </div>
+                            <div class="car_extras border-bot">
+                                <h5>Extras</h5>
+                                <div class="flex protection">
+                                    <p>Protection</p>
+                                    <p class="strong">100 DKK</p>
+                                </div>
+                                <div class="flex addons">
+                                    <p>Special protection</p>
+                                    <p class="strong">300 DKK</p>
+                                </div>
+                                <div class="flex safety">
+                                    <p>Insurance</p>
+                                    <p class="strong">400 DKK</p>
+                                </div>
+                            </div>
+                            <div class="car_summary">
+                                <h5>Summary</h5>
+                                <div class="flex">
+                                    <p>Total</p>
+                                    <p class="strong"><span id="total">550</span> DKK</p>
+                                </div>
+                                <a href="#" class="a-block link">Terms and conditions</a>
+                            </div>
+                        </div>
+                        <!-- <div class="btn btn-main btn-car"> Buy for 550 Dkk </div> -->
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/app.min.js"></script>
+    <script>
+        $('.protection').hide();
+        $('.addons').hide();
+        $('.safety').hide();
+    </script>
+</body>

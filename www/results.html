@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Bike Rental</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <a class="logo" href="index.html">
+                    <i class="fas fa-bicycle"></i> Rental
+                </a>
+                <div class="profile">Jon Doe <i class="fas fa-user"></i></div>
+            </div>
+        </header>
+        <main>
+            <section class="section section-dark">
+                <div class="container">
+                    <a class="breadcrum" href="#"><span class="breadcrum__num">1</span>Search Results</a>
+                    <i class="fas fa-chevron-right bread__disabled"></i>
+                    <a class="breadcrum bread__disabled" href="#"><span
+                            class="breadcrum__num bread__disabled">2</span>Bike Options</a>
+                    <i class="fas fa-chevron-right bread__disabled"></i>
+                    <a class="breadcrum bread__disabled" href="#"><span
+                            class="breadcrum__num bread__disabled">3</span>Checkout</a>
+                </div>
+                <div class="container">
+                    <div class="formBox">
+                        <div class="flex-grid">
+                            <div class="inputGroup">
+                                <label class="label" for="country">Country</label>
+                                <input type="text" id="country" value="Denmark">
+                            </div>
+                            <div class="inputGroup">
+                                <label for="city">City</label>
+                                <input type="text" id="city" value="Copenhagen">
+                            </div>
+                            <div class="inputGroup">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" value="Nørrebro Bikeshop">
+                            </div>
+                        </div>
+                        <div class="flex-grid">
+                            <div class="inputGroup">
+                                <label for="pickup">Pickup</label>
+                                <input type="date" id="pickup" placeholder="Pickup" value="2019-10-10">
+                            </div>
+                            <div class="inputGroup">
+                                <label for="return">Return</label>
+                                <input type="date" id="return" placeholder="Return" value="2019-10-14">
+                            </div>
+                            <div class="inputGroup">
+                                <button class="btn btn-sec btn-form"> Search </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section inner--top-small inner--bottom-big">
+                <div class="container inner--bottom">
+                    <div class="bar flex">
+                        <div>Results: <span>1</span> - <span>3</span> | (<span>3</span>)</div>
+                        <div>sort by <span>Price</span></div>
+                    </div>
+                </div>
+                <div class="container results__content">
+                    <div class="card card-car flex-grid">
+                        <div class="aspect">
+                            <div class="aspect_content__1_1">
+                                <div class="aspect_content__inner flex-center img car_img">
+                                    <img src="media/christiania-bike.jpg" alt="tesla-x">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grow_3">
+                            <div class="car_header flex">
+                                <div class="car_header__main flex grow_3">
+                                    <div>
+                                        <h4>Christiania bike</h4>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                                <a href="bike-options.html" class="car_header__cta btn btn-main flex-center">
+                                    <div>Get for 420 dkk</div>
+                                </a>
+                            </div>
+                            <div class="car_content flex-grid">
+                                <div>
+                                    <div class="car-item"><i class="fas fa-users"></i>
+                                        <p><span>3</span> Passengers</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-lock"></i>
+                                        <p>Lock included</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-cogs"></i>
+                                        <p>3 gears</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-bicycle"></i>
+                                        <p>Manual</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="car-item"><i class="fas fa-info-circle"></i>
+                                        <p>Relevant info</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-info-circle"></i>
+                                        <p>Relevant info</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-info-circle"></i>
+                                        <p>Relevant info</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-info-circle"></i>
+                                        <p>Relevant info</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-car flex-grid">
+                        <div class="aspect">
+                            <div class="aspect_content__1_1">
+                                <div class="aspect_content__inner flex-center img car_img">
+                                    <img src="media/christiania-bike-two.jpg" alt="tesla-x">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grow_3">
+                            <div class="car_header flex">
+                                <div class="car_header__main flex grow_3">
+                                    <div>
+                                        <h4>Christiania bike with electric motor</h4>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                                <a href="bike-options.html" class="car_header__cta btn btn-main flex-center">
+                                    <div>Get for 600 dkk</div>
+                                </a>
+                            </div>
+                            <div class="car_content flex-grid">
+                                <div>
+                                    <div class="car-item"><i class="fas fa-users"></i>
+                                        <p><span>3</span> Passengers</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-lock"></i>
+                                        <p>Lock included</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-cogs"></i>
+                                        <p>3 gears</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-bicycle"></i>
+                                        <p>Electric</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="car-item"><i class="fas fa-info-circle"></i>
+                                        <p>Relevant info</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-info-circle"></i>
+                                        <p>Relevant info</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-info-circle"></i>
+                                        <p>Relevant info</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-info-circle"></i>
+                                        <p>Relevant info</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-car flex-grid">
+                        <div class="aspect">
+                            <div class="aspect_content__1_1">
+                                <div class="aspect_content__inner flex-center img car_img">
+                                    <img src="media/christiania-bike-three.jpg" alt="tesla-x">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grow_3">
+                            <div class="car_header flex">
+                                <div class="car_header__main flex grow_3">
+                                    <div>
+                                        <h4>Christiania bike + 30 </h4>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <i class="far fa-bookmark"></i>
+                                </div>
+                                <a href="bike-options.html" class="car_header__cta btn btn-main flex-center">
+                                    <div>Get for 750 dkk</div>
+                                </a>
+                            </div>
+                            <div class="car_content flex-grid">
+                                <div>
+                                    <div class="car-item"><i class="fas fa-users"></i>
+                                        <p><span>4</span> Passengers</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-lock"></i>
+                                        <p>Lock included</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-cogs"></i>
+                                        <p>3 gears</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-bicycle"></i>
+                                        <p>Manual</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="car-item"><i class="fas fa-info-circle"></i>
+                                        <p>Relevant info</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-info-circle"></i>
+                                        <p>Relevant info</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-info-circle"></i>
+                                        <p>Relevant info</p>
+                                    </div>
+                                    <div class="car-item"><i class="fas fa-info-circle"></i>
+                                        <p>Relevant info</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/app.min.js"></script>
+</body>

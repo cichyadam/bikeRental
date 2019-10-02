@@ -1,0 +1,38 @@
+//  Variables   =============================================================================
+
+$font-bold: 'Averta Bold';
+$font-regular: 'Averta Regular';
+$font-light: 'Averta Light';
+$font-headline: 'Flood';
+
+$font-regular: 'Poppins', sans-serif;
+
+// Color vars ======================================
+
+$c-prim: #1A272E;
+$c-sec: #DA602D;
+$c-terc: #6D7D8B;
+
+$c-light: #E9EDEF;
+$c-blue-light : #ccddee;
+$c-dark: #556677;
+$c-black: #131313;
+
+//  General mixins   =============================================================================
+
+@mixin text-centered {
+    text-align: center;
+}
+
+@mixin box-shadow {
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.2),
+      0 4px 12px 0 rgba(0, 0, 0, 0.12);
+  }
+
+.border-bot {
+    border-bottom: 2px solid darken($color: $c-light, $amount: 40);
+}
+
+@mixin border-bot {
+    border-bottom: 2px solid darken($color: $c-light, $amount: 40);
+}

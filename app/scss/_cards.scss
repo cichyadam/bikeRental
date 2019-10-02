@@ -1,0 +1,76 @@
+.card {
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.card-car {
+    background-color: darken($color: $c-light, $amount: 5);
+    // border-bottom: 2px solid darken($color: $c-light, $amount: 40)
+    margin-bottom: 3em;
+}
+
+.card_upsell {
+    background-color: darken($color: $c-light, $amount: 5);
+
+    &:not(:first-of-type) {
+        margin-top: 3em;
+    }
+}
+
+.partner {
+    padding: 5px;
+}
+
+.card-header {
+    border-bottom: 2px solid $c-dark;
+    padding: 1em 0;
+    margin-bottom: 1em;
+    font-size: 16px;
+
+    i {
+        font-size: 24px;
+        color: $c-sec;
+    }
+}
+
+.card_review {
+    margin-top: 16px;
+
+    & > * {
+        flex-basis: 0;
+    }
+
+    & > .flex-center {
+        flex-grow: 2;
+    }
+
+    & > .card_review__content {
+        flex-grow: 4;
+    }
+}
+
+.upsell_header {
+    padding: 1em;
+    background-color: darken($color: $c-light, $amount: 10);
+}
+
+.upsell_subheader {
+    padding: 1em;
+    @include border-bot;
+
+    p {
+        margin-top: 0;
+    }
+
+    a {
+        color: $c-sec;
+    }
+}
+
+.upsell_content {
+    padding: 1.5em 1em;
+    .terms {
+        font-size: 14px;
+    }
+}

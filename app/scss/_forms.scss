@@ -1,0 +1,113 @@
+.flexWrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.flexWrapperColumn {
+	display: flex;
+	flex-direction: column;
+}
+
+.formBox {
+	font-family: $font-regular;
+	background-color: $c-light;
+	padding: 2em;
+	border-radius: 3px;
+}
+
+.form-index {
+	@include box-shadow;
+}
+
+.form-darker {
+	background-color: darken($color: $c-light, $amount: 5);
+
+	input {
+		background-color: darken($color: $c-light, $amount: 15);
+	}
+}
+
+label {
+	color: $c-prim;
+	text-transform: uppercase;
+}
+
+input {
+	background-color: darken($color: $c-light, $amount: 10);
+	margin-top: 0.5em;
+	display: block;
+	padding: 15px;
+	font-size: 14px;
+	border-radius: 4px;
+	width: 100%;
+	border: none;
+	color: $c-prim;
+	cursor: pointer;
+	transition: all .25s ease;
+
+	&:focus {
+		border-color: 1px solid green;
+	}
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: $c-prim;
+	opacity: 1; /* Firefox */
+}
+
+.inputGroup {
+	margin: 0.5em;
+}
+
+input[type='date'], input[type='month']{
+	padding-left: 60px;
+	background-image: url('../assets/icons8-calendar-11-50.png');
+	background-position: 8px 8px; 
+	background-size: 35px;
+	background-repeat: no-repeat;
+}
+input[type='tel']{
+	padding-left: 60px;
+	background-image: url('../assets/card.png');
+	background-position: 8px 8px; 
+	background-size: 35px;
+	background-repeat: no-repeat;
+}
+input[type='checkbox']{
+	width: 25px;
+	margin: 1em;
+	padding: 0;
+}
+.terms{
+	margin: 1em;
+	font-size: 12px;
+	color: $c-prim;
+	text-transform: initial;
+	cursor: pointer;
+}
+.link{
+	color: $c-sec;
+}
+.searchBtn{
+	background: $c-sec;
+	color: white;
+	border: none;
+	text-transform: uppercase;
+	margin-top: 2.35em;
+	padding: 15px;
+	font-size: 14px;
+	border-radius: 4px;
+	width: 20em;
+}
+.loginBtn{
+	margin: 0 auto;	
+	background: $c-sec;
+	color: white;
+	border: none;
+	text-transform: uppercase;
+	margin-top: 1em;
+	padding: 15px;
+	font-size: 14px;
+	border-radius: 4px;
+	width: 20em;
+}
